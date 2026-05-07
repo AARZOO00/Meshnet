@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # ⬡ MeshNet — Offline Disaster Communication System
 
 > **Peer-to-peer mesh networking for emergency responders and civilians when infrastructure fails.**
@@ -388,3 +389,6 @@ MIT — free to use, fork, and deploy in emergency response scenarios. Attributi
 Built with: WebRTC, Socket.io, React, D3.js, Leaflet, OpenStreetMap contributors, jsQR, qrcode.js, Share Tech Mono (Google Fonts).
 
 > *"When the grid goes down, the mesh comes up."*
+=======
+# Meshnet
+>>>>>>> 1073d6ef0b515b28b523af58689eea18cab2acd9
