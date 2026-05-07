@@ -1,0 +1,37 @@
+/* ── Google Font — must be first ───────────────────────────────────────────── */
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Global resets ─────────────────────────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  height: 100%;
+  overflow: hidden;
+  background: #0a0a0a;
+}
+
+/* ── Thin scrollbars everywhere ────────────────────────────────────────────── */
+::-webkit-scrollbar       { width: 3px; height: 3px; }
+::-webkit-scrollbar-track  { background: #0a0a0a; }
+::-webkit-scrollbar-thumb  { background: #00ff8833; border-radius: 2px; }
+::-webkit-scrollbar-thumb:hover { background: #00ff8866; }
+
+/* ── Remove default button/input styles ─────────────────────────────────────── */
+button, input, textarea, select {
+  font-family: 'Share Tech Mono', monospace;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* ── Prevent text selection on UI chrome ───────────────────────────────────── */
+.no-select {
+  -webkit-user-select: none;
+  user-select: none;
+}

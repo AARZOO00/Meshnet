@@ -1,0 +1,36 @@
+services:
+  - type: web
+    name: meshnet-signaling
+    runtime: node
+    region: oregon          # choose closest to your users
+    plan: starter           # $7/mo — upgrade to standard for no sleep
+    rootDir: server
+    buildCommand: npm install
+    startCommand: node index.js
+    healthCheckPath: /health
+
+    autoDeploy: true        # redeploy on every push to main
+
+    envVars:
+      - key: NODE_ENV
+        value: production
+
+      - key: PORT
+        value: 10000         # Render assigns this automatically; keep as 10000
+
+      - key: CORS_ORIGIN
+        sync: false          # set manually in Render dashboard
+        # Example value: https://meshnet.vercel.app,https://your-custom-domain.com
+
+      - key: MAX_NODES_PER_ZONE
+        value: 100
+
+      - key: LOG_LEVEL
+        value: info
+
+    # Optional: scale out with multiple instances + Redis adapter
+    # scaling:
+    #   minInstances: 1
+    #   maxInstances: 3
+    #   targetMemoryPercent: 80
+    #   targetCPUPercent: 70

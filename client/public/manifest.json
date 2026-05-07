@@ -1,0 +1,20 @@
+{
+  "name": "MeshNet",
+  "short_name": "MeshNet",
+  "description": "Offline disaster communication over WebRTC mesh networking",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#0a0a0a",
+  "theme_color": "#0a0a0a",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⬡</text></svg>",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["utilities", "communication"],
+  "permissions": ["geolocation", "camera", "microphone"]
+}
